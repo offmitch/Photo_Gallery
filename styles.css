@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("/images/background.jpg");
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, #640cb6, #b0bcc8);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out, glow 1.5s infinite alternate;
+}
+
+/* Glow effect */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #606465, 0 0 10px #556270;
+    }
+    to {
+        text-shadow: 0 0 15px #6f6464, 0 0 25px #556270;
+    }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 1em;
+    color: #333;
+  }
+  
